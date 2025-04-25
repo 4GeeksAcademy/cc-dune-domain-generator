@@ -11,7 +11,7 @@ import "./assets/img/4geeks.ico";
   let pronoun = ['the', 'our','they', 'that', 'them', 'what', 'which', 'whom', 'one', 'anybody', 'everybody', 'noone'];
   let adj = ['great', 'big', 'small', 'fast', 'slow', 'large', 'dinky', 'humongous', 'quiet', 'loud', 'medium', 'tiny', 'teeny', 'giant'];
   let noun = ['jogger', 'racoon', 'dog', 'cat', 'snake', 'car', 'train', 'airplane', 'river', 'lake', 'mesa', 'Earth', 'Sun', 'Pluto', 'planet', 'galaxy'];
-  let extensions = ['.com', '.us', '.org', 'de', '.net']
+  let extensions = ['.com', '.us', '.org', '.de', '.net', '.biz', '.info']
   
   const randomPronoun = Math.floor(Math.random() * pronoun.length);
   const randomAdj = Math.floor(Math.random() * adj.length);
