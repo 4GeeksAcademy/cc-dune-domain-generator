@@ -14,19 +14,19 @@ import "./assets/img/4geeks.ico";
   let extensions = ['.com', '.us', '.org', '.de', '.net', '.biz', '.info']
   
   // randomize the items in the array
-  const randomPronoun = Math.floor(Math.random() * pronoun.length);
-  const randomAdj = Math.floor(Math.random() * adj.length);
-  const randomNoun = Math.floor(Math.random() * noun.length);
-  const randomExtensions = Math.floor(Math.random() * extensions.length);
+  const pronounIndex = Math.floor(Math.random() * pronoun.length);
+  const adjIndex = Math.floor(Math.random() * adj.length);
+  const nounIndex = Math.floor(Math.random() * noun.length);
+  const extensionsIndex = Math.floor(Math.random() * extensions.length);
 
   // store the randomized items in variables
-  const randomItemPronoun = pronoun[randomPronoun];
-  const randomItemAdj = adj[randomAdj];
-  const randomItemNoun = noun[randomNoun];
-  const randomItemExtensions = extensions[randomExtensions]
+  const randomPronoun = pronoun[pronounIndex];
+  const randomAdj = adj[adjIndex];
+  const randomNoun = noun[nounIndex];
+  const randomExtensions = extensions[extensionsIndex]
   
     // display the results so the world can see our results
-  document.getElementById('textOutput').innerText = ("www." + randomItemPronoun + randomItemAdj + randomItemNoun + randomItemExtensions);
+  document.getElementById('textOutput').innerText = ("www." + randomPronoun + randomAdj + randomNoun + randomExtensions);
 
 }
 
